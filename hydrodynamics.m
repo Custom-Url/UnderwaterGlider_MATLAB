@@ -5,12 +5,6 @@ function [Cd, Cl] = hydrodynamics(attack)
 % drag and lift coefficients at the corresponding attack angles in the 
 % input vector ATTACK. The attack angles are assumed to be in radians.
 % 
-% The model is based on empirical data taken from:
-% Zhang et al., "Hydrodynamic performance and calculation of lift-drag 
-% ratio on underwater glider", Journal of Marine Science and Technology, 
-% volume 26, pages 16-23, 2021
-%
-% Alan Hunter, University of Bath, Nov 2021.
 
 Cd = 9.8 * cos( 2*attack + pi ) + 10.2;
 Cl = 10 * sin( 2*attack );
